@@ -1,0 +1,40 @@
+############
+# 在application.yml文件中可以配置如下内容可以被程序自动获取并进行修改，也可以通过继承如下类和实现如下接口进行修改
+# extends SpringBootServletInitializer implements EmbeddedServletContainerCustomizer
+###################
+server:
+    port: 8081
+#    context-path: /hello
+#  tomcat:
+#    uri-encoding: UTF-8
+
+
+###############配置数据库信息#################
+spring:
+  datasource:
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql://localhost:3306/zxpt?useUnicode=true&characterEncoding=utf-8
+     username: zxpt
+     password: zxpt
+  jpa:
+     database: MYSQL
+     show-sql: true
+     hibernate:
+        ddl-auto: update
+        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+     properties:
+        hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+
+
+################# 配置日志 #####################
+#logging:
+#  level:
+#     root: info
+#     com.atlihao: debug
+#  file: F:\\work_place\\idea_workspace\\log\\spring-boot-hello.log
+
+
+

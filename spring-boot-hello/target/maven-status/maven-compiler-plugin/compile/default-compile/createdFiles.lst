@@ -1,0 +1,6 @@
+com\springboot\example\entity\Role.class
+com\springboot\example\DemoApplication.class
+com\springboot\example\entity\User.class
+com\springboot\example\entity\Department.class
+com\springboot\example\configuration\JpaConfiguration.class
+com\springboot\example\repository\UserRepository.class
